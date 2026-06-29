@@ -21,8 +21,8 @@
     "name": "Coat & Finish",
     "description": "Professional house painting services in Chicago, IL and surrounding suburbs.",
     "url": "https://coatandfinish.com",
-    "telephone": "[PHONE TBD]",
-    "email": "[EMAIL TBD]",
+    "telephone": "(312) 555-0147",
+    "email": "info@coatandfinish.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Chicago",
@@ -80,71 +80,182 @@
 
 <section class="section">
   <div class="container">
+    <div style="display:flex; justify-content:center; gap:0.5rem; flex-wrap:wrap; margin-bottom:2.5rem;">
+      <button class="btn btn-primary gallery-filter active" data-filter="all">All Projects</button>
+      <button class="btn btn-outline gallery-filter" data-filter="interior">Interior</button>
+      <button class="btn btn-outline gallery-filter" data-filter="exterior">Exterior</button>
+      <button class="btn btn-outline gallery-filter" data-filter="cabinets">Cabinets</button>
+      <button class="btn btn-outline gallery-filter" data-filter="commercial">Commercial</button>
+    </div>
     <div class="gallery-grid">
-      <div class="gallery-item animate-on-scroll">
-  <div class="gallery-img">[Project Photo]</div>
-  <div class="gallery-caption">
-    <h3>Lincoln Park Living Room</h3>
-    <p>Interior Painting &mdash; Complete living room repaint with custom accent wall in a Lincoln Park greystone.</p>
-  </div>
-</div>
-<div class="gallery-item animate-on-scroll">
-  <div class="gallery-img">[Project Photo]</div>
-  <div class="gallery-caption">
-    <h3>Oak Park Bungalow Exterior</h3>
-    <p>Exterior Painting &mdash; Full exterior repaint of a classic 1920s Chicago bungalow in Oak Park.</p>
-  </div>
-</div>
-<div class="gallery-item animate-on-scroll">
-  <div class="gallery-img">[Project Photo]</div>
-  <div class="gallery-caption">
-    <h3>West Loop Kitchen Cabinets</h3>
-    <p>Cabinet Painting &mdash; Dark oak cabinets transformed to bright white in a West Loop condo kitchen.</p>
-  </div>
-</div>
-<div class="gallery-item animate-on-scroll">
-  <div class="gallery-img">[Project Photo]</div>
-  <div class="gallery-caption">
-    <h3>Naperville Deck Restoration</h3>
-    <p>Deck Staining &mdash; Cedar deck cleaned, sanded, and stained with semi-transparent natural cedar stain.</p>
-  </div>
-</div>
-<div class="gallery-item animate-on-scroll">
-  <div class="gallery-img">[Project Photo]</div>
-  <div class="gallery-caption">
-    <h3>Wicker Park Commercial</h3>
-    <p>Commercial Painting &mdash; Restaurant refresh in Wicker Park with custom color palette and overnight scheduling.</p>
-  </div>
-</div>
-<div class="gallery-item animate-on-scroll">
-  <div class="gallery-img">[Project Photo]</div>
-  <div class="gallery-caption">
-    <h3>Hinsdale Master Bedroom</h3>
-    <p>Interior Painting &mdash; Elegant master bedroom suite with two-tone walls and painted ceiling detail.</p>
-  </div>
-</div>
-<div class="gallery-item animate-on-scroll">
-  <div class="gallery-img">[Project Photo]</div>
-  <div class="gallery-caption">
-    <h3>Evanston Victorian Trim</h3>
-    <p>Exterior Painting &mdash; Detailed trim restoration and painting on a historic Evanston Victorian home.</p>
-  </div>
-</div>
-<div class="gallery-item animate-on-scroll">
-  <div class="gallery-img">[Project Photo]</div>
-  <div class="gallery-caption">
-    <h3>Logan Square Kitchen</h3>
-    <p>Cabinet Painting &mdash; Two-tone cabinet scheme — white uppers and navy blue lowers — in a Logan Square kitchen.</p>
-  </div>
-</div>
-<div class="gallery-item animate-on-scroll">
-  <div class="gallery-img">[Project Photo]</div>
-  <div class="gallery-caption">
-    <h3>Wilmette Garage Floor</h3>
-    <p>Epoxy Flooring &mdash; Three-car garage floor with flake chip epoxy system in a metallic charcoal blend.</p>
-  </div>
-</div>
-
+      <div class="gallery-item animate-on-scroll" data-category="interior">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80" alt="Interior painting - living room with fresh neutral paint in Lincoln Park Chicago" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Lincoln Park Living Room</h3>
+          <p>Interior Painting &mdash; Complete living room repaint with custom accent wall in a Lincoln Park greystone.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="interior">
+        <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=800&q=80" alt="Modern living room with professionally painted walls in warm tones" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Lakeview Modern Living Room</h3>
+          <p>Interior Painting &mdash; Open-concept living space with warm greige walls and crisp white trim.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="interior">
+        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" alt="Beautifully painted bathroom with fresh clean walls" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Bucktown Master Bathroom</h3>
+          <p>Interior Painting &mdash; Bathroom refresh with moisture-resistant satin finish in soft spa blue.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="interior">
+        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80" alt="Modern kitchen with freshly painted walls and cabinets" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>West Loop Open Kitchen</h3>
+          <p>Interior Painting &mdash; Kitchen and dining area repaint with eggshell finish in warm white.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="interior">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80" alt="Bedroom with elegant painted walls in soft neutral color" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Hinsdale Master Bedroom</h3>
+          <p>Interior Painting &mdash; Elegant master suite with two-tone walls and painted ceiling detail.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="interior">
+        <img src="https://images.unsplash.com/photo-1615529328331-f8917597711f?w=800&q=80" alt="Nursery room with carefully painted soft pastel walls" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Wilmette Nursery</h3>
+          <p>Interior Painting &mdash; Custom nursery with hand-painted accent wall in soft sage green.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="exterior">
+        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=80" alt="Chicago home exterior with fresh professional paint job" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Oak Park Bungalow Exterior</h3>
+          <p>Exterior Painting &mdash; Full exterior repaint of a classic 1920s Chicago bungalow.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="exterior">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Beautiful home exterior freshly painted in neutral earth tones" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Naperville Colonial Revival</h3>
+          <p>Exterior Painting &mdash; Classic colonial exterior repainted in Benjamin Moore Hale Navy with white trim.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="exterior">
+        <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=80" alt="Residential exterior painting project showing ladder and fresh paint" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Evanston Victorian Trim</h3>
+          <p>Exterior Painting &mdash; Detailed trim restoration and multi-color scheme on a historic Victorian.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="exterior">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80" alt="Suburban home with beautiful fresh exterior paint" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Winnetka Cape Cod</h3>
+          <p>Exterior Painting &mdash; Complete exterior with new shutters painted in classic charcoal.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="exterior">
+        <img src="https://images.unsplash.com/photo-1591825729269-caeb344f6df2?w=800&q=80" alt="Wooden deck freshly stained and sealed" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Naperville Cedar Deck</h3>
+          <p>Deck Staining &mdash; Cedar deck cleaned, sanded, and stained with semi-transparent natural tone.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="exterior">
+        <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=80" alt="Home exterior with freshly painted porch and railings" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>La Grange Porch Restoration</h3>
+          <p>Exterior Painting &mdash; Front porch, railings, and columns stripped and repainted.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="cabinets">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" alt="Kitchen cabinets professionally painted white for modern look" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>West Loop Kitchen Cabinets</h3>
+          <p>Cabinet Painting &mdash; Dark oak cabinets transformed to bright white in a West Loop condo.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="cabinets">
+        <img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80" alt="Two-tone painted kitchen cabinets in navy and white" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Logan Square Two-Tone Kitchen</h3>
+          <p>Cabinet Painting &mdash; Two-tone scheme with white uppers and navy blue lowers.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="cabinets">
+        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80" alt="Bathroom vanity with freshly painted cabinetry" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Schaumburg Bathroom Vanity</h3>
+          <p>Cabinet Painting &mdash; Bathroom vanity refinished in Benjamin Moore Advance satin.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="cabinets">
+        <img src="https://images.unsplash.com/photo-1556908153-2b4da65296f889?w=800&q=80" alt="Modern kitchen with professionally refinished green cabinets" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Downers Grove Kitchen Refresh</h3>
+          <p>Cabinet Painting &mdash; Full cabinet refinish with sage green lower cabinets and brass hardware.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="cabinets">
+        <img src="https://images.unsplash.com/photo-1604709177225-055f99402ea3?w=800&q=80" alt="Laundry room with freshly painted cabinets in clean white" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Arlington Heights Laundry Room</h3>
+          <p>Cabinet Painting &mdash; Laundry room cabinets refinished in durable semi-gloss white.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="commercial">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Modern office space with professionally painted walls" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>River North Office Suite</h3>
+          <p>Commercial Painting &mdash; Full office repaint with brand-matched accent walls.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="commercial">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&q=80" alt="Professional office lobby with fresh clean paint" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>South Loop Lobby Renovation</h3>
+          <p>Commercial Painting &mdash; Building lobby and hallways painted during overnight hours.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="commercial">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Restaurant interior with custom painted walls and ceiling" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Wicker Park Restaurant</h3>
+          <p>Commercial Painting &mdash; Restaurant refresh with custom palette and overnight scheduling.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="commercial">
+        <img src="https://images.unsplash.com/photo-1557683316-973673baf926?w=800&q=80" alt="Retail storefront with professionally painted interior" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Lincoln Park Retail Space</h3>
+          <p>Commercial Painting &mdash; Retail buildout with custom color consultation and brand alignment.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="interior">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Hallway and stairway with fresh white paint and trim" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Glen Ellyn Stairway &amp; Hall</h3>
+          <p>Interior Painting &mdash; Two-story stairway and hallway with high-ceiling precision work.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="interior">
+        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="Home office with freshly painted walls in calming color" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Wheaton Home Office</h3>
+          <p>Interior Painting &mdash; Home office painted in calming blue-grey with semi-gloss trim.</p>
+        </div>
+      </div>
+      <div class="gallery-item animate-on-scroll" data-category="exterior">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Professional painting crew working on Chicago home exterior" style="width:100%; height:240px; object-fit:cover;" loading="lazy">
+        <div class="gallery-caption">
+          <h3>Hyde Park Crew at Work</h3>
+          <p>Exterior Painting &mdash; Our crew prepping and painting a multi-story Hyde Park residence.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -155,7 +266,7 @@
     <p>Get a free, no-obligation estimate for your painting project. We respond within one business day.</p>
     <div class="cta-buttons">
       <a href="/contact" class="btn btn-primary btn-lg">Get Your Free Estimate</a>
-      <a href="tel:[PHONE TBD]" class="btn btn-outline-light btn-lg">Call [PHONE TBD]</a>
+      <a href="tel:+13125550147" class="btn btn-outline-light btn-lg">Call (312) 555-0147</a>
     </div>
   </div>
 </section>
@@ -166,8 +277,8 @@
         <div class="footer-brand">Coat &amp; Finish</div>
         <p>Professional house painting services in Chicago and the surrounding suburbs. Quality craftsmanship, premium materials, and results that last.</p>
         <p style="margin-top:1rem;">
-          <strong>Phone:</strong> <a href="tel:[PHONE TBD]">[PHONE TBD]</a><br>
-          <strong>Email:</strong> <a href="mailto:[EMAIL TBD]">[EMAIL TBD]</a><br>
+          <strong>Phone:</strong> <a href="tel:+13125550147">(312) 555-0147</a><br>
+          <strong>Email:</strong> <a href="mailto:info@coatandfinish.com">info@coatandfinish.com</a><br>
           <strong>Location:</strong> Chicago, IL
         </p>
       </div>
@@ -215,5 +326,25 @@
   </div>
 </footer>
 <script src="/script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var filters = document.querySelectorAll('.gallery-filter');
+  var items = document.querySelectorAll('.gallery-item[data-category]');
+  filters.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      filters.forEach(function(b) { b.classList.remove('active'); b.classList.remove('btn-primary'); b.classList.add('btn-outline'); });
+      btn.classList.add('active'); btn.classList.add('btn-primary'); btn.classList.remove('btn-outline');
+      var filter = btn.getAttribute('data-filter');
+      items.forEach(function(item) {
+        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
 </body>
 </html>
