@@ -19,12 +19,6 @@
     }
   ],
   "redirects": [
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.coatandfinish.com" }],
-      "destination": "https://coatandfinish.com/:path*",
-      "permanent": true
-    },
     { "source": "/services", "destination": "/#services", "statusCode": 301 },
     { "source": "/areas", "destination": "/#areas", "statusCode": 301 }
   ]
