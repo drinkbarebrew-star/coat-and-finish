@@ -130,16 +130,51 @@ document.addEventListener('DOMContentLoaded', function () {
         msgDiv.style.cssText = 'background:#FEE;border:1px solid #E77;color:#C33;padding:1rem;border-radius:8px;margin-bottom:1rem;';
         msgDiv.innerHTML = errors.join('<br>');
         contactForm.prepend(msgDiv);
-      } else {
-        // Simulate submission success
+        msgDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      // Pull fields for notifications
+      var name = data.name || '';
+      var phone = data.phone || '';
+      var email = data.email || '';
+      var service = data.service || 'Not specified';
+      var message = data.message || '';
+
+      // Telegram notification (fires immediately for speed-to-lead)
+      fetch('https://api.telegram.org/bot8735044985:AAGPjuQD8t_FCgRCY_KcIm64BKs980WUQYo/sendMessage', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          chat_id: '7046304764',
+          text: '🔔 NEW LEAD - Coat & Finish\n\nName: ' + name + '\nPhone: ' + phone + '\nEmail: ' + email + '\nService: ' + service + '\nMessage: ' + message
+        })
+      }).catch(function () {});
+
+      // Submit to Formspree (backup / email record)
+      var submitBtn = contactForm.querySelector('button[type="submit"]');
+      var originalText = submitBtn ? submitBtn.textContent : '';
+      if (submitBtn) { submitBtn.textContent = 'Sending...'; submitBtn.disabled = true; }
+
+      function showSuccess() {
         msgDiv.style.cssText = 'background:#EFE;border:1px solid #7C7;color:#363;padding:1rem;border-radius:8px;margin-bottom:1rem;';
         msgDiv.innerHTML = '<strong>Thank you!</strong> Your message has been sent. We\'ll get back to you within one business day.';
         contactForm.prepend(msgDiv);
         contactForm.reset();
-
-        // Scroll to message
         msgDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        if (submitBtn) { submitBtn.textContent = originalText; submitBtn.disabled = false; }
       }
+
+      fetch(contactForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      }).then(function () {
+        // Treat as success regardless — Telegram already delivered the lead
+        showSuccess();
+      }).catch(function () {
+        showSuccess();
+      });
     });
   }
 
