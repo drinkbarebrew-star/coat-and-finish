@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://coatandfinish.com/sitemap.xml

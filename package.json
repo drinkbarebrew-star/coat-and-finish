@@ -1,0 +1,11 @@
+{
+  "name": "coat-and-finish",
+  "version": "1.0.0",
+  "description": "Professional house painting services in Chicago, IL — Coat & Finish",
+  "private": true,
+  "scripts": {
+    "generate": "python3 generate_site.py",
+    "dev": "npx serve public",
+    "build": "python3 generate_site.py"
+  }
+}
