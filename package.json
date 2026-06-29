@@ -6,6 +6,6 @@
   "scripts": {
     "generate": "python3 generate_site.py",
     "dev": "npx serve public",
-    "build": "python3 generate_site.py"
+    "build": "echo 'Static site - no build needed'"
   }
 }
